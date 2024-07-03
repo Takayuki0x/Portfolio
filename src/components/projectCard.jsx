@@ -42,7 +42,7 @@ export default function ProjectCard({
               </a>
             </div>
           </div>
-          <div className="mt-3 flex flex-row gap-1">
+          <div className="mt-3 flex flex-row flex-wrap gap-1">
             {technologies.map((technology, index) => (
               <TechChip
                 key={`${id}-${technology}-${index}`}
