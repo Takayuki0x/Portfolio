@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cls-1 {
+    font-family: CascadiaCodeRoman-Light, 'Cascadia Code';
+    font-size: 60px;
+    font-variation-settings: 'wght' 300;
+    font-weight: 300;
+}
+
+.cls-1, .cls-2, .cls-3 {
+    fill: #fff;
+}
+
+.cls-2 {
+    font-family: CascadiaCode-BoldItalic, 'Cascadia Code';
+    font-size: 160px;
+    font-style: italic;
+    font-variation-settings: 'wght' 700;
+    font-weight: 700;
+}
+
+.cls-3 {
+    stroke-width: 0px;
+}
