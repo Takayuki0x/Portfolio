@@ -12,7 +12,7 @@ export const useTheme = (defaultTheme) => {
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem(ThemeProps.key);
 
-    return storedTheme || (defaultTheme ?? ThemeProps.light);
+    return storedTheme || (defaultTheme ?? ThemeProps.dark);
   });
 
   const isDark = useMemo(() => {
