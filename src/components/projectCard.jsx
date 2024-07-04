@@ -18,7 +18,7 @@ export default function ProjectCard({
       <Card radius="md">
         <CardBody>
           <div className="flex">
-            <Link href={projectLink}>
+            <Link className="flex-none" href={projectLink}>
               <Image
                 isZoomed
                 alt="Certification"
@@ -35,7 +35,9 @@ export default function ProjectCard({
                 </h3>
               </a>
               <a href={projectLink}>
-                <p className="text-sm italic text-slate-300">{launched}</p>
+                <p className="text-sm italic dark:text-slate-300 text-slate-600">
+                  {launched}
+                </p>
               </a>
               <a href={projectLink}>
                 <p className="mt-1">{description}</p>
