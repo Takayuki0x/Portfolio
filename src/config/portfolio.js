@@ -4,6 +4,24 @@ export const tabsData = [
     label: "Web Development",
     content: [
       {
+        id: "takayuki0xwordcounter",
+        description:
+          "A simple to use, locally run, word and character counter. No ads, no tracking, no data collection.",
+        imageURL: "/Projects/WordCounter.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Takayuki0x WordCounter",
+        launched: "July 2024",
+        link: "https://takayuki0xwordcounter.netlify.app",
+        technologies: [
+          "React.js",
+          "Vite.js",
+          "TailwindCSS",
+          "NextUI",
+          "Google Analytics",
+        ],
+      },
+      {
         id: "portfoliowebsite",
         description:
           "A portfolio created using ReactJS, showcasing my various projects and skills.",
