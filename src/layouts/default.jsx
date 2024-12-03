@@ -6,8 +6,11 @@ export default function DefaultLayout({ children }) {
       <Navbar />
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
+        <p className="text-center text-gray-500 pt-3">
+          Last updated: December 3, 2024
+        </p>
       </main>
-      <footer className="w-full flex items-center justify-center py-3">
+      <footer className="w-full flex items-center justify-center pb-3">
         <p className="text-center text-gray-500">
           &copy; {new Date().getFullYear()} Takayuki0x
         </p>

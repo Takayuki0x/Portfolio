@@ -15,6 +15,8 @@ import {
   SeleniumLogo,
   FlaskLogo,
   BDNDLogo,
+  UE5Logo,
+  AsepriteLogo,
 } from "./icons";
 
 export default function TechChip({ technology }) {
@@ -192,6 +194,30 @@ export default function TechChip({ technology }) {
             variant="faded"
           >
             React Beautiful DnD
+          </Chip>
+        </Link>
+      );
+    case "Unreal Engine 5":
+      return (
+        <Link href="https://www.unrealengine.com/en-US/unreal-engine-5">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<UE5Logo />}
+            variant="faded"
+          >
+            Unreal Engine 5
+          </Chip>
+        </Link>
+      );
+    case "Aseprite":
+      return (
+        <Link href="https://www.aseprite.org">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<AsepriteLogo />}
+            variant="faded"
+          >
+            Aseprite
           </Chip>
         </Link>
       );

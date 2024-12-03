@@ -89,11 +89,96 @@ export const tabsData = [
   {
     id: "game",
     label: "Game Development",
-    content: [],
+    content: [
+      {
+        id: "soulsoftheforgotten",
+        description:
+          "Souls Of The Forgotten is a roguelite boss rush game where the goal is to defeat Cassandra Of The Freezing Void. This game was made from scratch in 72 hours to participate in the Moroccan Game Jam 2024 Edition.",
+        imageURL: "/Projects/SoulsOfTheForgotten.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Souls Of The Forgotten",
+        launched: "November 2024",
+        link: "https://itch.io/jam/moroccan-game-jam/rate/3134654",
+        technologies: ["Unreal Engine 5", "Aseprite"],
+      },
+    ],
   },
 ];
 
 export const certificationData = [
+  {
+    id: "unrealengine5beginnerlightingfogandpostprocessing",
+    title: "Unreal Engine 5 - Beginner Lighting, Fog, and Post Processing",
+    description:
+      "The course provided valuable skills in Unreal Engine 5, Lighting, Fog, Post Processing, and more.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "October 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "learnhowtomakea2dplatformerinunrealengine5",
+    title: "Learn How To Make A 2D Platformer In Unreal Engine 5",
+    description:
+      "The course provided valuable skills in Unreal Engine 5, C++, Blueprints, AI, Animation, and more.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "September 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "thelegendofpython",
+    title: "The Legend of Python",
+    description:
+      "The course provided valuable skills in Python, including data types, control structures, functions, classes, and more.",
+    imageURL: "/Certifications/Codedex.jpeg",
+    received: "September 2024",
+    issuer: "Codedex",
+  },
+  {
+    id: "unrealengineultimatesurvivalhorrorcourse",
+    title: "Unreal Engine: Ultimate Survival Horror Course",
+    description:
+      "The course provided valuable skills in Unreal Engine 5, C++, Blueprints, AI, Animation, and more.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "September 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "pixelartforvideogames",
+    title: "Pixel Art for Video Games",
+    description:
+      "The course provided valuable skills in creating pixel art for video games, including character design, animation, and environment design.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "August 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "unrealengine5learntomakeaprofessionalmainmenu",
+    title: "Unreal Engine 5 - Learn to Make a Professional Main Menu",
+    description:
+      "The course provided valuable skills in Unreal Engine 5, UMG, C++, Blueprints, and more.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "August 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "electronfordesktopappsthecompletedevelopersguide",
+    title: "Electron for Desktop Apps: The Complete Developer's Guide",
+    description:
+      "The course provided valuable skills in Electron, React, Redux, Webpack, and more.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "July 2024",
+    issuer: "Udemy",
+  },
+  {
+    id: "marketingautomationforbeginnersstrategytoolsintro",
+    title: "Marketing Automation for Beginners - Strategy & Tools Intro",
+    description:
+      "The course provided valuable skills in marketing automation, email marketing, and CRM.",
+    imageURL: "/Certifications/Udemy.png",
+    received: "July 2024",
+    issuer: "Udemy",
+  },
   {
     id: "unrealengine5theintermediatecourse",
     title: "Unreal Engine 5: The Intermediate Course",
