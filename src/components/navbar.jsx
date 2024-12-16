@@ -1,8 +1,6 @@
 import { Link } from "@nextui-org/link";
-import { Image } from "@nextui-org/react";
 import {
   Navbar as NextUINavbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
@@ -19,20 +17,6 @@ export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-1"
-            color="foreground"
-            href="/"
-          >
-            <Image
-              alt="Website Logo"
-              height={120}
-              src="/Projects/PortfolioWebsite.svg"
-              width={120}
-            />
-          </Link>
-        </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
