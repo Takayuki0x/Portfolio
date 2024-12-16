@@ -1,53 +1,77 @@
-import { useState } from "react";
+import { Button } from "@nextui-org/react";
+import { Tabs, Tab } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
-import CheckComponent from "../components/CheckComponent";
 import DefaultLayout from "../layouts/default";
-import { CGdata } from "../config/CGdata";
+import { GithubIcon } from "../components/icons";
+import { LinkedinLogo } from "../components/icons";
+import { tabsData, certificationData } from "../config/portfolio";
+import CertificationCard from "../components/certificationCard";
+import ProjectsDisplay from "../components/projectsDisplay";
 
 export default function IndexPage() {
-  const [numberChedked, setNumberChecked] = useState(0);
-
-  const checked = () => {
-    setNumberChecked(numberChedked + 1);
-  };
-
-  const unchecked = () => {
-    setNumberChecked(numberChedked - 1);
-  };
-
   return (
     <DefaultLayout>
       <div>
         <h1 className="text-6xl font-bold m-auto text-center">
+          ANASS
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500 to-blue-500">
-            CX CG CHECKLIST
+            SOUMMANE
           </span>
         </h1>
-        <div>
-          <h2 className="text-2xl font-medium m-auto text-center mt-5">
-            <span
-              className={
-                numberChedked === CGdata.length
-                  ? "text-green-500"
-                  : "text-red-500"
-              }
-            >
-              {numberChedked}/{CGdata.length}
-            </span>{" "}
-            Checked
-          </h2>
+        <p className="text-center font-light text-xl m-auto mt-3">
+          Web and Game Developer | Digital Marketer
+        </p>
+        <br />
+        <div className="flex flex-row gap-2 place-content-center">
+          <Button
+            isIconOnly
+            aria-label="Take a photo"
+            className="hover:scale-110"
+            variant="faded"
+          >
+            <Link to="https://github.com/Takayuki0x">
+              <GithubIcon />
+            </Link>
+          </Button>
+          <Button
+            isIconOnly
+            aria-label="Take a photo"
+            className="hover:scale-110"
+            variant="faded"
+          >
+            <Link to="https://www.linkedin.com/in/anass-soummane-b2401b202">
+              <LinkedinLogo />
+            </Link>
+          </Button>
         </div>
-        <div className="mt-10">
-          {CGdata.map((data) => (
-            <CheckComponent
-              key={data.title}
-              checkedfn={checked}
-              content={data.content}
-              title={data.title}
-              uncheckedfn={unchecked}
-            />
-          ))}
-        </div>
+        <br />
+        <h2 className="text-3xl font-bold">Projects</h2>
+        <br />
+        <Tabs
+          aria-label="Project Categories"
+          color="danger"
+          items={tabsData}
+          variant="bordered"
+        >
+          {(item) => (
+            <Tab key={item.id} title={item.label}>
+              <ProjectsDisplay content={item.content} />
+            </Tab>
+          )}
+        </Tabs>
+        <br />
+        <h2 className="text-3xl font-bold">Certifications</h2>
+        {certificationData.map((certification) => (
+          <CertificationCard
+            key={certification.id}
+            description={certification.description}
+            imageURL={certification.imageURL}
+            issuer={certification.issuer}
+            received={certification.received}
+            title={certification.title}
+          />
+        ))}
       </div>
     </DefaultLayout>
   );
