@@ -846,3 +846,27 @@ export const AsepriteLogo = (props) => {
     </svg>
   );
 };
+
+export const MotionLogo = (props) => {
+  return (
+    <Image
+      alt="Motion Logo"
+      height={15}
+      src="/MotionLogo.png"
+      width={15}
+      {...props}
+    />
+  );
+};
+
+export const EarsketchLogo = (props) => {
+  return (
+    <Image
+      alt="EarSketch Logo"
+      height={15}
+      src="/EarsketchLogo.png"
+      width={15}
+      {...props}
+    />
+  );
+};

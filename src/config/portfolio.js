@@ -4,6 +4,53 @@ export const tabsData = [
     label: "Web Development",
     content: [
       {
+        id: "edmjingle",
+        description:
+          "EDM Jingle is a dynamic, code-crafted holiday anthem that secured 2nd place in The STEAM Boat's Code Your Own Holiday Song competition. Blending electronic dance music with festive cheer, it delivers a unique musical experience where creativity meets code.",
+        imageURL: "/Projects/EDMJingle.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "EDM Jingle",
+        launched: "December 2024",
+        link: "https://medilearn.netlify.app",
+        technologies: ["Python", "Earsketch"],
+      },
+      {
+        id: "medilearn",
+        description:
+          "MediLearn is an interactive learning platform designed to make medical education smarter, simpler, and more engaging. It was created alongside 2 other collaborators to participate in MediHacks' MiniMedi 2024 Hackathon.",
+        imageURL: "/Projects/MediLearn.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "MediLearn",
+        launched: "December 2024",
+        link: "https://medilearn.netlify.app",
+        technologies: [
+          "React.js",
+          "Vite.js",
+          "NextUI",
+          "TailwindCSS",
+          "Motion",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Bcryptjs",
+          "JWT",
+        ],
+      },
+      {
+        id: "neodigitalscrapbook",
+        description:
+          "Neo's Digital Scrapbook is the ultimate 90s throwback corner of the web — a vibrant, pixel-packed scrapbook site where hacker culture meets the matrix. Made to participate in Codedex Mini Holiday Hackathon 2024.",
+        imageURL: "/Projects/NeoDigitalScrapbook.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Neo's Digital Scrapbook",
+        launched: "December 2024",
+        link: "https://neosdigitalscrapbook.netlify.app",
+        technologies: ["React.js", "Vite.js"],
+      },
+      {
         id: "takayuki0xwordcounter",
         description:
           "A simple to use, locally run, word and character counter. No ads, no tracking, no data collection.",
@@ -91,6 +138,30 @@ export const tabsData = [
     label: "Game Development",
     content: [
       {
+        id: "talesofthefallen",
+        description:
+          "The last battle is upon you. Will you mend the threads of fate… or be consumed by the darkness? This game was made from scratch in 1 month to participate in the Boss Rush Jam 2025.",
+        imageURL: "/Projects/TalesOfTheFallen.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Tales Of The Fallen",
+        launched: "February 2025",
+        link: "https://itch.io/jam/boss-rush-jam-2025/rate/3227642",
+        technologies: ["Unreal Engine 5", "Aseprite"],
+      },
+      {
+        id: "repeldeflectsurvive",
+        description:
+          "A fast-paced action game where players harness the power of positive and negative charges to survive. This game was made from scratch in 72 hours to participate in the Winter MelonJam 2024.",
+        imageURL: "/Projects/RepelDeflectSurvive.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Repel. Deflect. Survive.",
+        launched: "January 2025",
+        link: "https://itch.io/jam/wmj2024/rate/3212822",
+        technologies: ["Unreal Engine 5", "Aseprite"],
+      },
+      {
         id: "soulsoftheforgotten",
         description:
           "Souls Of The Forgotten is a roguelite boss rush game where the goal is to defeat Cassandra Of The Freezing Void. This game was made from scratch in 72 hours to participate in the Moroccan Game Jam 2024 Edition.",
@@ -107,6 +178,25 @@ export const tabsData = [
 ];
 
 export const certificationData = [
+  {
+    id: "certificateofachievementsecondplaceinthecodeyourownholidaysongcompetition",
+    title:
+      "Certificate Of Achievement: Second Place In The Code Your Own Holiday Song Competition",
+    description:
+      "Earned the Certificate of Achievement for securing 2nd place in the 'Code Your Own Holiday Song' competition by The STEAM Boat. Designed and coded a creative musical experience, blending programming with holiday spirit",
+    imageURL: "/Certifications/TheSTEAMBoat.jpeg",
+    received: "December 2024",
+    issuer: "The STEAM Boat",
+  },
+  {
+    id: "miniholidayhackathon2024hacker",
+    title: "Mini Holiday Hackathon 2024 Hacker",
+    description:
+      "Took part in the Mini Holiday Hackathon organized by Codedex, where I worked on a creative coding project under a 90s theme.",
+    imageURL: "/Certifications/Codedex.jpeg",
+    received: "December 2024",
+    issuer: "Codedex",
+  },
   {
     id: "unrealengine5beginnerlightingfogandpostprocessing",
     title: "Unreal Engine 5 - Beginner Lighting, Fog, and Post Processing",

@@ -17,6 +17,8 @@ import {
   BDNDLogo,
   UE5Logo,
   AsepriteLogo,
+  MotionLogo,
+  EarsketchLogo,
 } from "./icons";
 
 export default function TechChip({ technology }) {
@@ -218,6 +220,30 @@ export default function TechChip({ technology }) {
             variant="faded"
           >
             Aseprite
+          </Chip>
+        </Link>
+      );
+    case "Motion":
+      return (
+        <Link href="https://motion.dev">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<MotionLogo />}
+            variant="faded"
+          >
+            Motion
+          </Chip>
+        </Link>
+      );
+    case "Earsketch":
+      return (
+        <Link href="https://earsketch.gatech.edu/">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<EarsketchLogo />}
+            variant="faded"
+          >
+            Earsketch
           </Chip>
         </Link>
       );
