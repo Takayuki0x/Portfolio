@@ -4,6 +4,31 @@ export const tabsData = [
     label: "Web Development",
     content: [
       {
+        id: "automark",
+        description:
+          "AutoMark is a marketing automation system designed to generate and publish content automatically. It creates blog posts, newsletters, and other marketing materials on a regular schedule without manual input.",
+        imageURL: "/Projects/Automark.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Automark",
+        launched: "June 2025",
+        link: "https://www.linkedin.com/posts/anass-soummane_marketingautomation-digitalmarketing-thesisdefense-activity-7329580319123136513-bIX5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADOdwYwBsc1yJRxp2K1DQB6EDyK6qe_hs1o",
+        technologies: [
+          "React.js",
+          "TailwindCSS",
+          "NextUI",
+          "Google Analytics",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Bcryptjs",
+          "JWT",
+          "Electron.js",
+          "SendGrid",
+          "OpenAI",
+        ],
+      },
+      {
         id: "edmjingle",
         description:
           "EDM Jingle is a dynamic, code-crafted holiday anthem that secured 2nd place in The STEAM Boat's Code Your Own Holiday Song competition. Blending electronic dance music with festive cheer, it delivers a unique musical experience where creativity meets code.",
@@ -12,7 +37,7 @@ export const tabsData = [
         imageHeight: 100,
         title: "EDM Jingle",
         launched: "December 2024",
-        link: "https://medilearn.netlify.app",
+        link: "https://earsketch.gatech.edu/earsketch2/?sharing=Js8ApdOoAj17ft5G1rxS8A",
         technologies: ["Python", "Earsketch"],
       },
       {
@@ -137,6 +162,30 @@ export const tabsData = [
     id: "game",
     label: "Game Development",
     content: [
+      {
+        id: "getouttathere",
+        description:
+          "Get Outta There! is a fast-paced, adrenaline-fueled game of stealth and strategy. The clock is ticking and the cops are closing in—you’ve got just minutes to find and stash your weapons, hide illegal materials, and wipe out every trace of your shady dealings. Scour the area for ammo, clean up the evidence, and make smart choices under pressure. Every second counts. Can you cover your tracks and get outta there before the law comes knocking?",
+        imageURL: "/Projects/GetOuttaThere.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Get Outta There",
+        launched: "May 2025",
+        link: "https://0xcstudio.itch.io/get-outta-there",
+        technologies: ["Unreal Engine 5"],
+      },
+      {
+        id: "gentlegrove",
+        description:
+          "Gentle Grove is a peaceful, cel-shaded adventure where you wander through sun-dappled forests, foraging for apples and tending your garden.",
+        imageURL: "/Projects/GentleGrove.png",
+        imageWidth: 100,
+        imageHeight: 100,
+        title: "Gentle Grove",
+        launched: "May 2025",
+        link: "https://0xcstudio.itch.io/gentle-grove",
+        technologies: ["Unreal Engine 5"],
+      },
       {
         id: "talesofthefallen",
         description:

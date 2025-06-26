@@ -11,7 +11,7 @@ export default function CertificationCard({
     <div className="mt-4">
       <Card radius="md">
         <CardBody>
-          <div className="flex gap-4">
+          <div className="md:flex gap-4">
             <div className="mt-1 basis-1/8 flex-none">
               <Image
                 isZoomed
@@ -22,7 +22,7 @@ export default function CertificationCard({
                 width={100}
               />
             </div>
-            <div>
+            <div className="mt-2 md:mt-0">
               <h3 className="font-bold text-2xl">{title}</h3>
               <p className="text-sm italic dark:text-slate-300 text-slate-600">
                 {issuer} - {received}

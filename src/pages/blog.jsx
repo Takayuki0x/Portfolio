@@ -6,9 +6,9 @@ export default function DocsPage() {
   return (
     <DefaultLayout>
       <div>
-        <h1 className="text-5xl font-bold text-center">Personal Blog</h1>
+        <h1 className="text-5xl font-bold text-center">Blog</h1>
       </div>
-      <div className="grid grid-cols-3 mt-10 gap-2">
+      <div className="mt-10">
         {blogsData.map((blog) => (
           <BlogCard
             key={blog.id}
@@ -17,6 +17,7 @@ export default function DocsPage() {
             imageURL={blog.imageURL}
             publishedDate={blog.published}
             title={blog.title}
+            type={blog.type}
           />
         ))}
       </div>

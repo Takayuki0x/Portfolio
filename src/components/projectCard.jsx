@@ -17,11 +17,12 @@ export default function ProjectCard({
     <div className="mt-4">
       <Card radius="md">
         <CardBody>
-          <div className="flex">
+          <div className="md:flex">
             <Link className="flex-none" href={projectLink}>
               <Image
                 isZoomed
                 alt="Certification"
+                className="ml-4 md:ml-0"
                 height={imageHeight}
                 radius="md"
                 src={imageURL}
@@ -44,7 +45,7 @@ export default function ProjectCard({
               </a>
             </div>
           </div>
-          <div className="mt-3 flex flex-row flex-wrap gap-1">
+          <div className="mt-3 flex flex-row flex-wrap gap-1 ml-4 md:ml-0">
             {technologies.map((technology, index) => (
               <TechChip
                 key={`${id}-${technology}-${index}`}

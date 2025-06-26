@@ -6,21 +6,21 @@ export const siteConfig = {
     {
       label: "Portfolio",
       href: "/",
-    } /*
+    },
     {
       label: "Blog",
-      href: "/blog",
-    },*/,
+      href: "/blogs",
+    },
   ],
   navMenuItems: [
     {
       label: "Portfolio",
       href: "/",
-    } /*
+    },
     {
       label: "Blog",
-      href: "/blog",
-    },*/,
+      href: "/blogs",
+    },
   ],
   links: {
     github: "https://github.com/Takayuki0x",

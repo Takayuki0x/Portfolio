@@ -19,6 +19,9 @@ import {
   AsepriteLogo,
   MotionLogo,
   EarsketchLogo,
+  ElectronLogo,
+  SendgridLogo,
+  OpenAIIcon,
 } from "./icons";
 
 export default function TechChip({ technology }) {
@@ -244,6 +247,42 @@ export default function TechChip({ technology }) {
             variant="faded"
           >
             Earsketch
+          </Chip>
+        </Link>
+      );
+    case "Electron.js":
+      return (
+        <Link href="https://www.electronjs.org">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<ElectronLogo />}
+            variant="faded"
+          >
+            Electron.js
+          </Chip>
+        </Link>
+      );
+    case "SendGrid":
+      return (
+        <Link href="https://sendgrid.com">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<SendgridLogo />}
+            variant="faded"
+          >
+            SendGrid
+          </Chip>
+        </Link>
+      );
+    case "OpenAI":
+      return (
+        <Link href="https://openai.com">
+          <Chip
+            classNames={{ base: "border-1 rounded-md pl-2" }}
+            startContent={<OpenAIIcon />}
+            variant="faded"
+          >
+            OpenAI
           </Chip>
         </Link>
       );
