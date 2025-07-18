@@ -1,4 +1,5 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
+import React from "react";
 
 import BlogChip from "./blogChip";
 
@@ -12,7 +13,7 @@ export default function BlogCard({
 }) {
   return (
     <div>
-      <Card radius="md">
+      <Card className="mt-4" radius="md">
         <CardBody>
           <div className="flex">
             <a href={`/blog/${id}`}>
@@ -41,7 +42,14 @@ export default function BlogCard({
                 <p className="text-sm italic text-slate-300">{publishedDate}</p>
               </a>
               <a href={`/blog/${id}`}>
-                <p className="mt-1">{description}</p>
+                <p className="mt-1">
+                  {description.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </p>
               </a>
             </div>
           </div>

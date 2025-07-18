@@ -2,7 +2,7 @@ import { blogsData } from "../config/blog";
 import DefaultLayout from "../layouts/default";
 import BlogCard from "../components/blogCard";
 
-export default function DocsPage() {
+export default function BlogsPage() {
   return (
     <DefaultLayout>
       <div>

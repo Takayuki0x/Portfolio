@@ -12,6 +12,16 @@ export default function BlogChip({ blogType }) {
           {blogType}
         </Chip>
       );
+    case "What I Learned This Week":
+      return (
+        <Chip
+          classNames={{ base: "border-1 rounded-md pl-2" }}
+          color="success"
+          variant="dot"
+        >
+          {blogType}
+        </Chip>
+      );
     default:
       return (
         <Chip
